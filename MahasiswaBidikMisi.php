@@ -12,8 +12,10 @@ class MahasiswaBidikMisi extends Mahasiswa {
         $this->danaSakuSubsidi = $danaSakuSubsidi;
     }
 
+    // TAHAP 5: Method Overriding (Polimorfisme)
+    // Total Tagihan = 0 (digratiskan penuh, ditanggung negara via KIP-K)
     public function hitungTagihanSemester() {
-        return 0; // Digratiskan / dicover KIP-K
+        return 0;
     }
 
     public function tampilkanSpesifikasiAkademik() {

@@ -12,9 +12,10 @@ class MahasiswaPrestasi extends Mahasiswa {
         $this->minimalIpkSyarat = $minimalIpkSyarat;
     }
 
+    // TAHAP 5: Method Overriding (Polimorfisme)
+    // Total Tagihan = tarifUktNominal * 0.25 (hanya membayar 25% dari tarif asli)
     public function hitungTagihanSemester() {
-        // Contoh logika: UKT dipotong setengah oleh beasiswa
-        return $this->tarif_ukt_nominal / 2; 
+        return $this->tarif_ukt_nominal * 0.25;
     }
 
     public function tampilkanSpesifikasiAkademik() {

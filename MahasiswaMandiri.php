@@ -13,9 +13,10 @@ class MahasiswaMandiri extends Mahasiswa {
         $this->namaWali = $namaWali;
     }
 
-    // Wajib diimplementasi dari abstract class
+    // TAHAP 5: Method Overriding (Polimorfisme)
+    // Total Tagihan = tarifUktNominal + 100000 (biaya operasional/praktikum)
     public function hitungTagihanSemester() {
-        return $this->tarif_ukt_nominal; // Membayar penuh sesuai UKT
+        return $this->tarif_ukt_nominal + 100000;
     }
 
     public function tampilkanSpesifikasiAkademik() {
